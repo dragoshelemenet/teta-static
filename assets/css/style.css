@@ -471,3 +471,130 @@ img { display: block; max-width: 100%; }
     margin-top: -18px;
   }
 }
+
+/* final responsive polish */
+@media (max-width: 1200px) {
+  .container {
+    width: min(100%, calc(100% - 32px));
+  }
+}
+
+@media (max-width: 900px) {
+  .site-branding-wrapper {
+    min-height: 72px;
+  }
+
+  .custom-logo-link img {
+    width: 74px;
+  }
+
+  .main-navigation a {
+    font-size: 13px;
+  }
+
+  .book-session-btn {
+    right: 14px;
+    bottom: 14px;
+    padding: 10px 14px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 700px) {
+  h1, h2, h3 {
+    word-break: break-word;
+  }
+
+  .hero-home img {
+    min-height: 210px;
+    max-height: 320px;
+  }
+
+  .home-stack h1,
+  .home-stack h2 {
+    font-size: 28px !important;
+    line-height: 1.3;
+  }
+
+  .page-section {
+    padding: 28px 0 !important;
+  }
+
+  .card-clean h1 {
+    font-size: 23px !important;
+    line-height: 1.3;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .service-card .pad,
+  .quote-card-grid .pad {
+    padding: 16px;
+  }
+
+  .quote-item blockquote,
+  .content-html p,
+  .service-card p,
+  .service-card li {
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+  }
+
+  .footer {
+    padding: 22px 0 26px;
+  }
+
+  .footer p {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  #gdpr-banner {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .accept-btn {
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: calc(100% - 24px);
+  }
+
+  .custom-logo-link img {
+    width: 66px;
+  }
+
+  .main-navigation ul {
+    top: 68px;
+    right: 12px;
+    left: 12px;
+  }
+
+  .home-stack h1,
+  .home-stack h2,
+  .card-clean h1 {
+    font-size: 22px !important;
+  }
+
+  .book-session-btn {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    text-align: center;
+    border-radius: 999px;
+  }
+
+  .mandala-left,
+  .mandala-right {
+    width: 110px;
+    opacity: .14;
+  }
+}
