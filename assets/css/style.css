@@ -783,3 +783,57 @@ div[style*="background:#f6f2f3"] {
     margin-left: 0;
   }
 }
+
+/* ===== FIX SERVICE CARD BUTTONS ===== */
+.cards-grid {
+  align-items: stretch !important;
+}
+
+.service-card {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+
+.service-card .pad {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 auto !important;
+}
+
+.service-card .pad > p:last-child,
+.service-card .pad > div:last-child,
+.service-card .pad > button:last-child,
+.service-card .pad > a:last-child {
+  margin-top: auto !important;
+}
+
+.service-card .btn,
+.service-card button,
+.service-card a.btn {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  white-space: normal !important;
+  text-align: center !important;
+  line-height: 1.45 !important;
+  padding: 14px 18px !important;
+}
+
+a[style*="min-width:230px"],
+a[style*="min-width:290px"],
+button[style*="min-width:318px"] {
+  min-width: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.service-card h3 {
+  min-height: 3.2em;
+}
+
+@media (max-width: 920px) {
+  .service-card h3 {
+    min-height: auto;
+  }
+}
