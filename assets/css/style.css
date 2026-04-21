@@ -840,3 +840,211 @@ button[style*="min-width:318px"] {
     min-width: 100% !important;
   }
 }
+
+/* ===== OVERALL DESIGN UPGRADE ===== */
+
+/* background + readability */
+body {
+  background:
+    radial-gradient(circle at top left, rgba(255,255,255,.95), rgba(255,255,255,.88) 30%, rgba(244,240,242,.96) 65%),
+    linear-gradient(180deg, #f7f3f5 0%, #f2ecef 100%) !important;
+  color: #655d62 !important;
+}
+
+/* header more elegant */
+.sticky-wrapper {
+  background: rgba(255,255,255,.985) !important;
+  box-shadow: 0 8px 24px rgba(90,60,75,.06) !important;
+}
+
+.main-navigation a {
+  color: #6b6167 !important;
+  transition: color .18s ease, opacity .18s ease, transform .18s ease;
+}
+
+.main-navigation a:hover,
+.main-navigation a.active {
+  color: #9c3f69 !important;
+}
+
+.main-navigation a:hover {
+  transform: translateY(-1px);
+}
+
+/* containers softer */
+.card-clean,
+.service-card,
+.quote-card-grid {
+  border-radius: 18px !important;
+  box-shadow: 0 14px 40px rgba(99,65,82,.07) !important;
+}
+
+.service-card {
+  border: 1px solid rgba(140,90,116,.08) !important;
+  background: rgba(255,255,255,.82) !important;
+  backdrop-filter: blur(3px);
+}
+
+/* text nicer */
+h1,h2,h3 {
+  letter-spacing: .01em;
+}
+
+.content-html p,
+.contact-block p,
+.simple-list li,
+.quote-item blockquote,
+.quote-card-grid blockquote {
+  color: #6e666b !important;
+}
+
+/* buttons premium */
+.btn-primary {
+  background: linear-gradient(180deg, #8e2f5a 0%, #791f49 100%) !important;
+  border: 1px solid rgba(93,22,55,.8) !important;
+  box-shadow: 0 10px 26px rgba(121,31,73,.18) !important;
+}
+
+.btn-outline,
+.btn-linklike {
+  background: rgba(255,255,255,.92) !important;
+  border: 1px solid rgba(203,160,50,.45) !important;
+  color: #6c6167 !important;
+}
+
+.book-session-btn {
+  background: linear-gradient(180deg, #d5ab44 0%, #be942b 100%) !important;
+  box-shadow: 0 12px 28px rgba(173,129,22,.22) !important;
+}
+
+/* quote blocks prettier */
+.quote-item::before {
+  width: 3px !important;
+  background: linear-gradient(180deg, #9c3f69 0%, #cc8ba8 100%) !important;
+  border-radius: 999px;
+}
+
+.quote-list .quote-item,
+div[style*="border-left:2px solid #8a274f"] {
+  position: relative;
+}
+
+/* mandalas lower opacity */
+.mandala-decor {
+  opacity: .16 !important;
+}
+
+/* footer more polished */
+.footer {
+  background: linear-gradient(180deg, #8a2750 0%, #731a43 100%) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+.footer p {
+  opacity: .95;
+}
+
+/* ===== BIGGER IMAGES ===== */
+
+/* home round photo */
+.home-avatar {
+  width: 150px !important;
+  height: 150px !important;
+  margin-bottom: 34px !important;
+  border-width: 6px !important;
+  box-shadow: 0 14px 34px rgba(90,60,75,.12) !important;
+}
+
+/* contact round/rect image generic upgrades */
+.contact-photo {
+  width: 150px !important;
+  height: 150px !important;
+  border-width: 6px !important;
+  box-shadow: 0 14px 34px rgba(90,60,75,.12) !important;
+}
+
+/* specific inline-sized images */
+img[style*="width: 118px"] {
+  width: 158px !important;
+  height: 158px !important;
+  border: 6px solid rgba(255,255,255,.96);
+  box-shadow: 0 14px 34px rgba(90,60,75,.12);
+}
+
+img[style*="width:320px"] {
+  width: 520px !important;
+  max-width: 100% !important;
+  border-radius: 18px !important;
+  box-shadow: 0 16px 42px rgba(90,60,75,.12);
+}
+
+/* make cards breathe more */
+.page-section {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+.cards-grid {
+  gap: 28px !important;
+}
+
+.service-card .pad,
+.quote-card-grid .pad {
+  padding: 24px !important;
+}
+
+/* softer highlighted boxes */
+div[style*="background:#eddde2"],
+div[style*="background: #f0dfe4"],
+div[style*="background:#f0dfe4"] {
+  background: linear-gradient(180deg, rgba(244,224,231,.9) 0%, rgba(240,221,228,.82) 100%) !important;
+  box-shadow: 0 10px 30px rgba(111,70,93,.05);
+}
+
+div[style*="background:#f7f5f6"],
+div[style*="background: #f7f5f6"],
+div[style*="background:#f6f2f3"] {
+  background: linear-gradient(180deg, rgba(255,255,255,.84) 0%, rgba(246,242,243,.92) 100%) !important;
+  box-shadow: 0 10px 30px rgba(111,70,93,.05);
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .home-avatar,
+  .contact-photo {
+    width: 132px !important;
+    height: 132px !important;
+  }
+
+  img[style*="width: 118px"] {
+    width: 142px !important;
+    height: 142px !important;
+  }
+
+  img[style*="width:320px"] {
+    width: 430px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-avatar,
+  .contact-photo {
+    width: 116px !important;
+    height: 116px !important;
+  }
+
+  img[style*="width: 118px"] {
+    width: 126px !important;
+    height: 126px !important;
+  }
+
+  img[style*="width:320px"] {
+    width: 100% !important;
+  }
+
+  .service-card .pad,
+  .quote-card-grid .pad {
+    padding: 18px !important;
+  }
+}
+
