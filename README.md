@@ -4,6 +4,7 @@ Static GitHub Pages version of the public teta website.
 
 ## What works
 - public pages
+- blog page
 - bilingual EN / DE pages
 - static HTML/CSS/JS
 - GitHub Pages hosting
