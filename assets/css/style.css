@@ -837,3 +837,183 @@ button[style*="min-width:318px"] {
     min-height: auto;
   }
 }
+
+/* ===== MOBILE HERO + MENU FIX ===== */
+
+/* safer mobile nav */
+@media (max-width: 920px) {
+  .sticky-wrapper {
+    overflow: visible !important;
+  }
+
+  .site-branding-wrapper {
+    position: relative !important;
+    min-height: 78px !important;
+    gap: 16px !important;
+  }
+
+  .main-navigation {
+    position: static !important;
+  }
+
+  .menu-toggle {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 72px !important;
+    height: 40px !important;
+    padding: 0 14px !important;
+    font-size: 13px !important;
+    background: rgba(255,255,255,.96) !important;
+    border: 1px solid rgba(123,24,76,.14) !important;
+    box-shadow: 0 8px 20px rgba(90,60,75,.08) !important;
+    z-index: 120 !important;
+    position: relative !important;
+  }
+
+  .main-navigation ul {
+    top: calc(100% + 10px) !important;
+    right: 0 !important;
+    left: auto !important;
+    width: min(280px, calc(100vw - 24px)) !important;
+    max-width: calc(100vw - 24px) !important;
+    padding: 16px 16px !important;
+    gap: 0 !important;
+    border-radius: 20px !important;
+    background: rgba(255,255,255,.99) !important;
+    box-shadow: 0 16px 34px rgba(60,35,48,.16) !important;
+    z-index: 140 !important;
+  }
+
+  .main-navigation ul li {
+    width: 100% !important;
+  }
+
+  .main-navigation ul a {
+    display: block !important;
+    width: 100% !important;
+    padding: 11px 4px !important;
+    font-size: 16px !important;
+    line-height: 1.35 !important;
+    text-align: left !important;
+  }
+
+  .lang-item a {
+    font-size: 18px !important;
+  }
+}
+
+/* hero image better on phone */
+@media (max-width: 700px) {
+  .hero-home {
+    overflow: hidden !important;
+  }
+
+  .hero-home img {
+    min-height: 185px !important;
+    max-height: 240px !important;
+    height: 44vw !important;
+    object-fit: cover !important;
+    object-position: center 34% !important;
+  }
+
+  /* old screenshots looked better with slightly less huge avatar */
+  .home-avatar {
+    width: 132px !important;
+    height: 132px !important;
+    margin-top: 8px !important;
+    margin-bottom: 26px !important;
+  }
+
+  .home-stack {
+    max-width: 100% !important;
+  }
+
+  .home-stack h1,
+  .home-stack h2 {
+    font-size: 22px !important;
+    line-height: 1.28 !important;
+    margin-bottom: 20px !important;
+  }
+
+  .content-html,
+  .content-html p,
+  .simple-list,
+  .simple-list li,
+  .quote-item blockquote,
+  .quote-item footer,
+  .contact-block p {
+    font-size: 14px !important;
+    line-height: 1.72 !important;
+  }
+
+  .quote-item {
+    padding-left: 18px !important;
+  }
+
+  .btn,
+  .btn-primary,
+  .btn-outline,
+  .btn-linklike {
+    font-size: 13px !important;
+    padding: 12px 18px !important;
+  }
+
+  .contact-photo {
+    width: 132px !important;
+    height: 132px !important;
+  }
+
+  img[style*="width:170px"] {
+    width: 132px !important;
+    height: 132px !important;
+  }
+
+  img[style*="width:180px"] {
+    width: 132px !important;
+    height: 132px !important;
+  }
+
+  .page-section {
+    padding-top: 34px !important;
+    padding-bottom: 34px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: calc(100% - 20px) !important;
+  }
+
+  .custom-logo-link img {
+    width: 70px !important;
+  }
+
+  .site-branding-wrapper {
+    min-height: 74px !important;
+  }
+
+  .main-navigation ul {
+    width: min(260px, calc(100vw - 20px)) !important;
+  }
+
+  .hero-home img {
+    min-height: 170px !important;
+    max-height: 210px !important;
+    height: 42vw !important;
+    object-position: center 36% !important;
+  }
+
+  .home-stack h1,
+  .home-stack h2,
+  .card-clean h1 {
+    font-size: 20px !important;
+  }
+
+  .book-session-btn {
+    left: 12px !important;
+    right: 12px !important;
+    bottom: 12px !important;
+    text-align: center !important;
+  }
+}
