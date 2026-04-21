@@ -598,3 +598,245 @@ img { display: block; max-width: 100%; }
     opacity: .14;
   }
 }
+
+/* ===== GLOBAL SCALE UP FIX ===== */
+body {
+  font-size: 17px;
+}
+
+.main-navigation a {
+  font-size: 14px !important;
+}
+
+.custom-logo-link img {
+  width: 98px !important;
+}
+
+.site-branding-wrapper {
+  min-height: 86px !important;
+}
+
+.hero-home img {
+  min-height: 420px !important;
+  max-height: 680px !important;
+}
+
+.home-avatar {
+  width: 120px !important;
+  height: 120px !important;
+  margin-bottom: 30px !important;
+}
+
+.home-stack {
+  max-width: 860px !important;
+}
+
+.home-stack h1,
+.home-stack h2 {
+  font-size: 38px !important;
+  line-height: 1.32 !important;
+  margin-bottom: 26px !important;
+}
+
+.content-html,
+.quote-item blockquote,
+.service-card p,
+.service-card li,
+.quote-card-grid blockquote,
+.contact-block p,
+.simple-list li {
+  font-size: 16px !important;
+  line-height: 1.9 !important;
+}
+
+.simple-list {
+  font-size: 16px !important;
+  margin: 28px 0 !important;
+}
+
+.btn {
+  font-size: 13px !important;
+  padding: 10px 18px !important;
+}
+
+.book-session-btn {
+  font-size: 13px !important;
+  padding: 13px 18px !important;
+}
+
+.card-clean h1 {
+  font-size: 34px !important;
+  line-height: 1.3 !important;
+}
+
+.page-section {
+  padding-top: 52px !important;
+  padding-bottom: 52px !important;
+}
+
+.cards-grid {
+  gap: 28px !important;
+}
+
+.service-card .pad,
+.quote-card-grid .pad {
+  padding: 24px !important;
+}
+
+.quote-list {
+  max-width: 860px !important;
+}
+
+.quote-item {
+  margin-bottom: 24px !important;
+  padding-left: 26px !important;
+}
+
+.quote-item blockquote {
+  font-size: 15px !important;
+}
+
+.quote-item footer {
+  font-size: 14px !important;
+}
+
+.contact-photo {
+  width: 130px !important;
+  height: 130px !important;
+}
+
+.contact-block {
+  max-width: 860px !important;
+}
+
+.footer p {
+  font-size: 13px !important;
+}
+
+.social-icons img {
+  width: 26px !important;
+  height: 26px !important;
+}
+
+#gdpr-banner {
+  font-size: 13px !important;
+  padding: 14px 16px !important;
+}
+
+.accept-btn {
+  font-size: 12px !important;
+  padding: 8px 13px !important;
+}
+
+/* page-specific inline style overrides by element type */
+h1[style*="font-size:24px"],
+h1[style*="font-size:23px"],
+h1[style*="font-size:26px"],
+h1[style*="font-size:30px"] {
+  font-size: 36px !important;
+}
+
+h2[style*="font-size:17px"],
+h3[style*="font-size:18px"] {
+  font-size: 24px !important;
+  line-height: 1.45 !important;
+}
+
+div[style*="font-size:13px"],
+p[style*="font-size:13px"],
+p[style*="font-size:12px"],
+p[style*="font-size:14px"],
+div[style*="font-size:14px"] {
+  font-size: 15px !important;
+  line-height: 1.9 !important;
+}
+
+img[style*="width: 118px"] {
+  width: 138px !important;
+  height: 138px !important;
+}
+
+img[style*="width:320px"] {
+  width: 420px !important;
+  max-width: 100% !important;
+}
+
+a[style*="min-width:230px"],
+a[style*="min-width:290px"],
+button[style*="min-width:318px"] {
+  min-width: 340px !important;
+}
+
+/* responsive still larger than before */
+@media (max-width: 900px) {
+  body {
+    font-size: 16px !important;
+  }
+
+  .custom-logo-link img {
+    width: 82px !important;
+  }
+
+  .hero-home img {
+    min-height: 300px !important;
+    max-height: 520px !important;
+  }
+
+  .home-stack h1,
+  .home-stack h2,
+  .card-clean h1 {
+    font-size: 30px !important;
+  }
+
+  .content-html,
+  .quote-item blockquote,
+  .service-card p,
+  .service-card li,
+  .contact-block p,
+  .simple-list li {
+    font-size: 15px !important;
+  }
+
+  img[style*="width:320px"] {
+    width: 360px !important;
+  }
+
+  a[style*="min-width:230px"],
+  a[style*="min-width:290px"],
+  button[style*="min-width:318px"] {
+    min-width: 280px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-stack h1,
+  .home-stack h2,
+  .card-clean h1 {
+    font-size: 25px !important;
+  }
+
+  .content-html,
+  .quote-item blockquote,
+  .service-card p,
+  .service-card li,
+  .contact-block p,
+  .simple-list li {
+    font-size: 14px !important;
+    line-height: 1.75 !important;
+  }
+
+  .btn,
+  .book-session-btn {
+    font-size: 12px !important;
+  }
+
+  img[style*="width:320px"] {
+    width: 100% !important;
+  }
+
+  a[style*="min-width:230px"],
+  a[style*="min-width:290px"],
+  button[style*="min-width:318px"] {
+    min-width: 100% !important;
+  }
+}
