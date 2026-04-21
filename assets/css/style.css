@@ -283,3 +283,72 @@ img { max-width: 100%; display: block; }
   .menu-toggle { display: inline-block; }
   .custom-logo-link img { width: 74px; height: 74px; }
 }
+
+
+.hero.hero-home img{
+  max-height: 820px;
+  object-position: center;
+}
+.hero-overlay.minimal{
+  align-items: center;
+}
+.hero-overlay.minimal .hero-box{
+  max-width: 760px;
+}
+.hero-overlay.minimal.empty-box .hero-box{
+  background: transparent;
+  border: 0;
+  backdrop-filter: none;
+  padding: 0;
+}
+
+.lead-box{
+  font-size: 1.08rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.content-html p{
+  margin: 0 0 14px;
+}
+.content-html h2,
+.content-html h3,
+.content-html h4{
+  color: var(--accent);
+  font-style: italic;
+  text-align: center;
+  margin: 22px 0 14px;
+}
+.section-card.narrow{
+  max-width: 920px;
+  margin: 0 auto;
+}
+.service-card .pad h3,
+.quote-card .pad h3{
+  margin-top: 0;
+}
+.quote-card{
+  height: 100%;
+}
+.quote-card .pad{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.quote-card footer{
+  margin-top: auto;
+  padding-top: 14px;
+}
+.top-space{
+  margin-top: 24px;
+}
+.contact-list{
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+}
+.contact-list li{
+  margin-bottom: 10px;
+}
+.soft-note{
+  opacity: .86;
+}

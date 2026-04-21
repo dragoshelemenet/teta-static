@@ -24,3 +24,10 @@ Push to `main`, then in GitHub:
 - Deploy from branch
 - Branch: `main`
 - Folder: `/ (root)`
+
+
+## Current state
+- static public site
+- EN / DE pages
+- blog page
+- longer home/services/testimonials content
