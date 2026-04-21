@@ -1089,3 +1089,36 @@ button[style*="min-width:318px"] {
     display: none !important;
   }
 }
+
+/* ===== MOBILE HERO IMAGE FULL FIT ===== */
+@media (max-width: 700px) {
+  .hero-home {
+    background: #e7c79e !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .hero-home img {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-home {
+    background: #e6c392 !important;
+  }
+
+  .hero-home img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+  }
+}
